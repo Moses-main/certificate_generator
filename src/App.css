@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+
+.cert-background::before{
+  content:"";
+  position:absolute;
+  top:0;
+  right:0;
+  background-position: center;
+  left:0;
+  opacity: 0.9;
+  background-image: url("/public/tublian_s.png");
+  bottom:0;
+  background-repeat:no-repeat;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+  opacity: 0.2;
+}
+
+
+.cert-background{
+  position:relative;
+  z-index: 2;
+  text-align: justify;
+}
