@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { Button, Container, Typography } from "@mui/material";
 import { useReactToPrint } from "react-to-print";
-// import { CardMembership } from "@mui/icons-material";
+import { CardMembership } from "@mui/icons-material";
 import "../App.css";
 
 const Certificate = ({ name, certId, date }) => {
@@ -92,6 +92,7 @@ const Certificate = ({ name, certId, date }) => {
           style={{
             textAlign: "justify",
             fontWeight: "bolder",
+            fontSize: "14px"
           }}
         >
           successfully completed the 4-Week AI Internship Program at Tublian,
@@ -143,13 +144,13 @@ const Certificate = ({ name, certId, date }) => {
             >
               CERTIFIED
             </Typography>
-            {/* <CardMembership
+            <CardMembership
               style={{
                 // fontSize: "80",
                 color: "orangered",
                 // marginRight: "10px",
               }}
-            /> */}
+            />
             Certificate ID: {certId}
             <Typography
               variant="body2"
